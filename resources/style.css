@@ -1,0 +1,44 @@
+section, div {
+    border: 1px solid red;
+}
+
+/* body {
+    display: flex;
+} */
+
+#card {
+    margin: 0 auto;
+    margin-top: 25%;
+    
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.info-container {
+    height: 446px;
+}
+
+h1 {
+    border: .5px solid green;
+    display: inline-block;
+}
+
+section {
+    text-align: center;
+}
+.info {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.image {
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
