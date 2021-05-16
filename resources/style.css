@@ -14,10 +14,17 @@ html {
 
 .image-1 {
     display: block;
-    background-image: url("https://i.postimg.cc/63QXr3jm/image-header-desktop.jpg");
+    background: url("/home/kwalker/Dev/Projects/preview-card/resources/images/image-header-desktop.jpg") hsla(277, 70%, 61%, 1);
     background-size: cover;
     height: 100%;
-    border-top-right-radius: 0.5rem; 
+    border-top-right-radius: 0.5rem;
+    background-blend-mode: multiply;
+    /* filter: sepia(2%); */
+    
+}
+
+.box-1 {
+    border-top-right-radius: 0.5rem;
 }
 
 .box-2 {
@@ -69,6 +76,7 @@ h2 {
 .box-1 {
     width: 20.44rem; /* mobile */
     height: 15rem; /* mobile */
+    border-top-left-radius: 0.5rem; /* mobile */
 }
 
 .image-1 {
@@ -140,6 +148,7 @@ h2 {
 .box-1 {
     width: 33.75rem;  /* desktop */
     height: 27.875rem;  /* desktop */
+    border-bottom-right-radius: 0.5rem;  /* desktop */
 }
 
 .image-1 {
