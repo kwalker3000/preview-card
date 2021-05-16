@@ -177,6 +177,9 @@ h2 {
     font-size: 0.75rem; /* desktop */
     margin: -15%;  /* desktop */
     font-family: 'Lexend Deca', sans-serif;  /* desktop */
+    letter-spacing: 0.063rem;
+    position: relative;
+    right: 2%;
 }
 
 }
