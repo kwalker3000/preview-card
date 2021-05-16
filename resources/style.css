@@ -1,111 +1,183 @@
-body {
-    color: white;
-  }
-  
-  .test {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.sandbox {
+	margin: 0 auto;
+    display: flex; 
     justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
+    overflow: hidden;
+    background-color: hsl(233, 47%, 7%);
     color: white;
-    font-family: 'Inter', sans-serif;;
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: left;
-    line-height: 2.75rem;
-    margin-left: 10px;
-  
-  }
-  
-  h1 span {
-    color: #AB5CDB;
-  }
-  
-  .heading-block {
+}
+
+.image-1 {
+    display: block;
+    background-image: url("https://i.postimg.cc/63QXr3jm/image-header-desktop.jpg");
+    background-size: cover;
+    height: 100%;
+    border-top-right-radius: 0.5rem; 
+}
+
+.box-2 {
+    background-color: hsl(244, 38%, 16%);
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    margin-left: 25px;
-    margin-bottom: 25px;
-  }
-  
-  .heading-block p {
+    border-bottom-left-radius: 0.5rem;  
+}
+
+h1 {  
     font-family: 'Inter', sans-serif;
-    text-align: left;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-right: 100px;
-    margin-left: 10px;
-  }
-  
-  .card-container {
-    width: 69.4rem;
-    height: 27.88rem;
-    display: flex;
-  }
-  
-  .info-container {
-    margin: 0 40px;
-    position: relative;
-    bottom: 25px;
-  }
-  
-  .box-1 {
-    background-color: #1B1937;
-    display: flex;
-    align-items: center;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-  }
-  
-  .box-2 {
-    padding: 0;
-    margin: 0;
-    background-color: #AB5CDB;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-  
-  #image {
-    object-fit: cover;
-    opacity: 0.4;
-    background-color: black;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-  
-  .stats {
-    display: inline-block;
-  }
-  
-  .infograph {
-    box-sizing: border-box;
-    width: 355px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: left;
-    margin-left: 32px;
-    position: relative;
-    top: 30px
-  }
-  
-  .stats p {
-    margin: 0.188rem;
-    font-family: 'Lexend Deca', serif;
-    font-size: 0.75rem;
-    line-height: 1.56rem;
-    letter-spacing: 0.063rem;
-  }
-  
-  .numbers {
-    font-family: serif;
-    font-size: 1.5rem !important;
     font-weight: bold;
-  }
-  
-  
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.para {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.938rem;
+    line-height: 1.56rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.infograph {
+    display: flex;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.infograph p {
+    text-align: center;
+    color: hsla(0, 0%, 100%, .65);
+}
+
+/* ------ Mobile ------ */
+@media screen and (max-device-width: 480px) {
+
+.sandbox {
+    width: 23.44rem; /* mobile */
+    padding: 7% 0; /* mobile */
+}
+
+.box-1 {
+    width: 20.44rem; /* mobile */
+    height: 15rem; /* mobile */
+}
+
+.image-1 {
+    border-top-left-radius: 0.5rem; /* mobile */
+}
+
+.box-2 {
+    width: 20.44rem;  /* mobile */
+    height: 33.75rem;  /* mobile */
+    align-items: center;
+    border-bottom-right-radius: 0.5rem;  /* mobile */
+}
+
+h1 {  
+    font-size: 1.75rem;  /* mobile */
+    text-align: center; /* mobile */
+    margin: 10%; /* mobile */
+    line-height: 2rem; /* mobile */
+}
+
+.para {
+    text-align: center; /* mobile */
+    margin: -5% 10% 0;  /* mobile */
+    letter-spacing: 0.06rem; /* mobile */
+    height: 6.25rem;  /* mobile */
+}
+
+.infograph {
+    min-width: 50%;  /* mobile */
+    height: 45%;  /* mobile */
+    flex-direction: column;  /* mobile */
+    align-items: center;  /* mobile */
+    text-align: center;  /* mobile */
+    margin-top: 5%;  /* mobile */
+    margin-bottom: 9%;   /* mobile */
+}
+
+h2 {
+    text-align: center;  /* mobile */
+    margin-top: 30px;  /* mobile */
+}
+
+.infograph p {
+    font-size: 0.65rem;  /* mobile */
+    margin: -15%;  /* mobile */
+    font-family: 'Inter', serif; /* mobile */
+}
+
+}
+
+/* ------ Desktop ------ */
+@media screen and (min-device-width: 481px) {
+
+.sandbox {
+    width: 90rem;  /* desktop */
+    height: 50rem;  /* desktop */
+    flex-direction: row;  /* desktop */
+    align-items: center;  /* desktop */
+}
+
+.card-container {  /* desktop */
+    width: 69.375rem;
+    height: 27.875rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+}
+
+.box-1 {
+    width: 33.75rem;  /* desktop */
+    height: 27.875rem;  /* desktop */
+}
+
+.image-1 {
+    border-bottom-right-radius: 0.5rem;  /* desktop */
+}
+
+.box-2 {
+    width: 35.625rem;  /* desktop */
+    height: 27.875rem;  /* desktop */
+    justify-content: center; /* desktop */
+    border-top-left-radius: 0.5rem;  /* desktop */
+}
+
+h1 {
+    font-size: 2.25rem;  /* desktop */
+    line-height: 2.75rem;  /* desktop */
+    margin: 2% 25% 0 15%;  /* desktop */
+}
+
+.para {
+    display: inline-block;  /* desktop */;
+    margin: 4% 30% -4% 15%;  /* desktop */
+}
+
+.infograph {
+    margin: 14% 33% 2% 15%;  /* desktop */
+    justify-content: space-between;  /* desktop */
+}
+
+h2 {
+    margin-bottom: 25%;  /* desktop */
+}
+
+.infograph p {
+    font-size: 0.75rem; /* desktop */
+    margin: -15%;  /* desktop */
+    font-family: 'Lexend Deca', sans-serif;  /* desktop */
+}
+
+}
+    
