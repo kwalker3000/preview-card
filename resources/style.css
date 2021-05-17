@@ -14,7 +14,7 @@ html {
 
 .image-1 {
     display: block;
-    background: url("/home/kwalker/Dev/Projects/preview-card/resources/images/image-header-desktop.jpg") hsla(277, 72%, 61%, .95);
+    background: url("./images/image-header-desktop.jpg") hsla(277, 72%, 61%, .95);
     background-size: cover;
     height: 100%;
     border-top-right-radius: 0.5rem;
