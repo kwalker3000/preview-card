@@ -14,17 +14,21 @@ html {
 
 .image-1 {
     display: block;
-    background: url("/home/kwalker/Dev/Projects/preview-card/resources/images/image-header-desktop.jpg") hsla(277, 70%, 61%, 1);
+    background: url("/home/kwalker/Dev/Projects/preview-card/resources/images/image-header-desktop.jpg") hsla(277, 72%, 61%, .95);
     background-size: cover;
     height: 100%;
     border-top-right-radius: 0.5rem;
     background-blend-mode: multiply;
-    /* filter: sepia(2%); */
+    z-index: 0;
+    opacity: .75;
+    /* filter: sepia(50%); */
     
 }
 
 .box-1 {
     border-top-right-radius: 0.5rem;
+    background-color: hsla(277, 68%, 61%, 1);
+    z-index: 2;
 }
 
 .box-2 {
@@ -100,7 +104,7 @@ h1 {
 .para {
     text-align: center; /* mobile */
     margin: -5% 10% 0;  /* mobile */
-    letter-spacing: 0.06rem; /* mobile */
+    letter-spacing: 0.01rem;  /*mobile */
     height: 6.25rem;  /* mobile */
 }
 
@@ -122,7 +126,10 @@ h2 {
 .infograph p {
     font-size: 0.65rem;  /* mobile */
     margin: -15%;  /* mobile */
+    margin-left: -5%;
     font-family: 'Inter', serif; /* mobile */
+    font-weight: 500;
+    letter-spacing: 0.063rem;
 }
 
 }
@@ -165,16 +172,17 @@ h2 {
 h1 {
     font-size: 2.25rem;  /* desktop */
     line-height: 2.75rem;  /* desktop */
-    margin: 2% 25% 0 15%;  /* desktop */
+    margin: 1.5% 15% 0 12.5%;  /* desktop */
 }
 
 .para {
     display: inline-block;  /* desktop */;
-    margin: 4% 30% -4% 15%;  /* desktop */
+    margin: 5% 25% -7% 12.5%;  /* desktop */
+    text-align: left;
 }
 
 .infograph {
-    margin: 14% 33% 2% 15%;  /* desktop */
+    margin: 16% 26% 2% 12.5%;  /* desktop */
     justify-content: space-between;  /* desktop */
 }
 
@@ -184,9 +192,9 @@ h2 {
 
 .infograph p {
     font-size: 0.75rem; /* desktop */
-    margin: -15%;  /* desktop */
+    margin: -15% 0 -15% 1%;
     font-family: 'Lexend Deca', sans-serif;  /* desktop */
-    letter-spacing: 0.063rem;
+    letter-spacing: 0.043rem;
     position: relative;
     right: 2%;
 }
