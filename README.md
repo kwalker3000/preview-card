@@ -33,6 +33,11 @@ Desktop:
 
 ## My process:
 
+Actually did the project twice. First time was a learning curve with trial and error. Had some ideas but not enough experience
+with those ideas. Second time around was more methodical knowing what does and does not work. Starting with the mobile design
+and working top to bottom. Then building off it to create desktop layout. I doubt the code is efficient, but that is something
+I can improve on.
+
 ### Built with:
 
 - HTML5
@@ -49,6 +54,9 @@ Desktop:
 ### Continued development:
 
 - positioning (think I lost track of what my margins were actually doing)
+- work faster
+- be more efficient with my css
+- continue learning responsive design and how to incorporate it in my projects
 
 ### Useful resources:
 
